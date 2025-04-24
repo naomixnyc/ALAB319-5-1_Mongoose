@@ -2,7 +2,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 dotenv.config()
-//import Fruit from './models/fruit.mjs'
+import Fruit from './models/fruit.mjs'
 import Fruits from './routes/fruits.mjs'
 
 const app = express()
@@ -57,7 +57,7 @@ app.use('/fruits', Fruits )
 
 
 
-// ---> [  moved to routes/fruits.mjs ] --->
+// -------- [  moved to routes/fruits.mjs ] -------->
 // // GET all fruits- Index
 // app.get('/fruits', async (req, res)=>{
 //     try{
